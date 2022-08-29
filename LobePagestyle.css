@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Poppins:wght@400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+
+html, body 
+{
+    overflow-x: hidden;
+}
+
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+li 
+{
+    list-style: none;
+    line-height: 1.25;
+
+}
+
+a
+{
+    text-decoration: none;
+    transition: all .45s ease;
+    color: rgb(27, 27, 27);
+}
+
+a:hover 
+{
+   
+    text-decoration: underline;
+}
+
+button 
+{
+    padding: .65rem 1.9rem;
+    background-color: #04ddb2;
+    outline: none;
+    border: none;
+    border-radius: .75rem;
+    font-weight: 500;
+    font-size: .9rem;
+    color: white;
+    transition: all .25s ease;
+    cursor: pointer;
+}
+
+button:hover
+{
+    transform: scale(1.05);
+}
+
+i 
+{
+    color: white;
+    font-size: 1.3rem;
+    margin: .25rem ;
+    background-color: #04ddb2;
+    padding: .5rem .8rem;
+    border-radius: 50%;
+}
+
+
+
+
+
+/* navbar */
+
+.navBar 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(255, 255, 255, 0.856);
+    box-shadow: 0 0 5px rgb(219, 219, 219);
+    /* position: st; */
+    width: 100vw;
+
+}
+
+.HamburgerMenu i
+{
+    display: none;
+}
+
+.navLinks 
+{
+    display: flex;
+}
+
+.logo
+{
+    font-size: 1.75rem;
+}
+
+.navBar li
+{
+    margin:0 .25rem;
+    padding: .5rem 1.5rem;
+}
+
+
+
+/* maincontent */
+
+.section
+{
+    padding: 2rem 12rem;
+}
+
+.content 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.mainHeading
+{
+    font-size: 3.8rem;
+    color: rgb(41, 41, 41);
+    margin: 1rem;
+    line-height: 1.25;
+}
+.mainHeading span 
+{
+    color: #04ddb2;
+}
+
+img 
+{
+    width: 80%;
+    margin: 3rem 0;
+    transition: all .3s ease;
+   
+}
+
+img:hover
+{
+    box-shadow: 0 15px 1rem rgb(184, 184, 184);
+    transform: scale(1.05);
+}
+
+
+.content p 
+{
+    font-size: 1.3rem;
+}
+
+
+.contentInfo
+{
+    margin-bottom: 5rem;
+}
+
+.contentInfo button
+{
+    margin: 1.25rem;
+}
+
+
+/* footer */
+
+.footer
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 2rem;
+    position: relative;
+}
+
+.footerMainheading 
+{
+    font-weight: 500;
+    text-decoration: underline;
+    margin-bottom: .5rem;
+}
+
+.footer li
+{
+    line-height: 2.7;
+  
+}
+.footer a
+{
+    color: rgb(56, 56, 56);
+}
+
+
+/* media queries */
+
+@media screen and (max-width:427px) {
+
+
+
+
+    .section
+    {
+        padding: 2rem;
+    }
+    .navBar
+    {
+        /* width: 100%; */
+        padding: 1rem 2rem;
+    }
+
+
+    .logo
+{
+    font-size: 1.4rem;
+}
+
+    .HamburgerMenu .active
+    {
+        display: block;
+        transition: .4s ease;
+        
+    }
+    .hide 
+    {
+        display: none;
+        transition: .4s ease;
+    }
+    .navLinks
+    {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width: 100vw;
+        height: 00vh;
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+        left: 0;
+        overflow: hidden;
+        transition: .4s ease;
+    }
+    .navactive
+    {
+        height: 80vh;
+        
+    }
+    .navLinks li 
+    {
+        line-height: 2;
+        
+    }
+
+
+    /* mainheading */
+
+    .mainHeading
+    {
+        font-size: 2rem;
+    }
+
+    img 
+    {
+        width: 95vw;
+        margin: 2rem 0;
+    }
+ 
+
+
+    .footer
+    {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer div 
+    {
+        margin: 1rem 0rem;
+    }
+    i 
+    {
+        font-size: 1.15rem;
+    }
+    .content p 
+{
+    font-size: 1rem;
+}
+.contentInfo
+{
+    margin-bottom: 3rem;
+}
+
+}
+
+
+
+
+
+@media screen and (min-width:427px) and  (max-width:768px) {
+    .section
+    {
+        padding: 2rem 3rem;
+    }
+    .navBar
+    {
+        /* width: 100%; */
+        padding: 1rem 2rem;
+    }
+    .HamburgerMenu .active
+    {
+        display: block;
+        transition: .4s ease;
+        
+    }
+    .hide 
+    {
+        display: none;
+        transition: .4s ease;
+    }
+    .navLinks
+    {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width: 100vw;
+        height: 00vh;
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+        left: 0;
+        overflow: hidden;
+        transition: .4s ease;
+    }
+
+    .navactive
+    {
+        height: 80vh;
+        
+    }
+    .navLinks li 
+    {
+        line-height: 2;
+        
+    }
+    .video 
+    {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .footer
+    {
+        flex-wrap: wrap;
+      
+    }
+    .footer div 
+    {
+        margin: 2rem 2rem;
+    }
+    
+    
+}
+
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+    .section
+    {
+        padding: 2rem 4rem;
+    }
+}
